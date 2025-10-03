@@ -5,8 +5,8 @@ public class DailyPower {
     // a) print power prices during a day
     public static void printPowerPrices(double[] prices) {
 
-        for (double price : prices){
-            System.out.printf("%.2f kWh ", price);
+        for (double pric : prices){
+            System.out.printf("%.2f kWh ", pric);
         }
 
         // TODO
