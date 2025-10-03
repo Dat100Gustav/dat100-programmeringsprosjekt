@@ -16,7 +16,7 @@ public class DailyPower {
     // b) print power usage during a day
     public static void printPowerUsage(double[] usage) {
 
-        // halloo
+        // hallo
         // TODO
 
     }
