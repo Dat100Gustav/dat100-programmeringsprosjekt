@@ -2,96 +2,101 @@ package no.hvl.dat100.javel.oppgave1;
 
 public class DailyPower {
 
-    // a) print power prices during a day
+    // a) TODO Ferdig uten test TODO
     public static void printPowerPrices(double[] prices) {
 
         for (double price : prices){
-            System.out.printf("%.2f kWh ", price);
+            System.out.printf("%.2f kWh \n", price);
         }
-
-        //hej, hej, hallå
-        // TODO
-
     }
 
-    // b) print power usage during a day
+    // b) TODO Ferdig uten test TODO
     public static void printPowerUsage(double[] usage) {
 
-        // hallo
-        // TODO
-
+        for(double usag : usage){
+            System.out.printf("%.2f kWh \n", usag);
+        }
     }
 
-    // c) compute power usage for a single day
+    // c) TODO Ferdig uten test TODO
     public static double computePowerUsage(double[] usage) {
 
         double sum = 0;
-
-        // TODO
-
+        for(int i = 0; i < usage.length; i++){
+            sum += usage[i];
+        }
         return sum;
     }
 
-    // d) compute spot price for a single day
+    // d) TODO Ferdig uten test TODO
     public static double computeSpotPrice(double[] usage, double[] prices) {
 
         double price = 0;
-
-        // TODO
-
+        for (int i = 0; i < usage.length; i++){
+            price += usage[i] * prices[i];
+        }
         return price;
     }
 
-    // e) compute power support for a given usage and price
+    // e) // TODO Ferdig uten test TODO
     private static final double THRESHOLD = 0.9375;
     private static final double PERCENTAGE = 0.9;
 
     private static double getSupport(double usage, double price) {
 
         double support = 0;
+        price *= usage;
 
-        // TODO
-
+        if (price > THRESHOLD){
+            support = (price - THRESHOLD) * PERCENTAGE;
+        }
         return support;
     }
 
-    // f) compute power support for a single day
+    // f) TODO Ferdig uten test TODO
     public static double computePowerSupport(double[] usage, double[] prices) {
 
         double support = 0;
 
-        // TODO
-
+        for(int i = 0; i < usage.length; i++){
+            support += getSupport(usage[i], prices[i]);
+        }
         return support;
     }
 
     private static final double NORGESPRIS_KWH = 0.5;
 
-    // g) compute norges pris for a single day
+    // g) TODO Ferdig uten test TODO
     public static double computeNorgesPrice(double[] usage) {
 
         double price = 0;
 
-        // TODO
-
+        for (double usag : usage) {
+            price += usag * NORGESPRIS_KWH;
+        }
         return price;
     }
 
-    // g) compute peak usage during a single day
+    // h) TODO Ferdig uten test TODO
     public static double findPeakUsage(double[] usage) {
 
         double temp_max = 0;
 
-        // TODO
-
+        for(int i = 0; i < usage.length; i++){
+            if (temp_max < usage[i]){
+                temp_max = usage[i];
+            }
+        }
         return temp_max;
     }
-
+    // i) TODO Ferdig uten test TODO
     public static double findAvgPower(double[] usage) {
 
         double average = 0;
-
-        // TODO
+        for(double time : usage){
+            average += time
+        }
+        average = average/usage.length;
 
         return average;
     }
