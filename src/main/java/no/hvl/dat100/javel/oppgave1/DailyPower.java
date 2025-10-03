@@ -9,6 +9,7 @@ public class DailyPower {
             System.out.printf("%.2f kWh ", price);
         }
 
+        //hej, hej, hallå
         // TODO
 
     }
