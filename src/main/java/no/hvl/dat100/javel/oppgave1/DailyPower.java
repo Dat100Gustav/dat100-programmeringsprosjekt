@@ -17,13 +17,8 @@ public class DailyPower {
     // b) print power usage during a day
     public static void printPowerUsage(double[] usage) {
 
-        // TODO TEST DA SHIT
-
-        for (double bruk : usage) {
-            System.out.printf("%.2f kr. ", bruk);
-        }
-
-
+        // hallo
+        // TODO
 
     }
 
