@@ -2,7 +2,7 @@ package no.hvl.dat100.javel.oppgave1;
 
 public class DailyPower {
 
-    // a) print power prices during a day
+    // a) TODO Ferdig uten test TODO
     public static void printPowerPrices(double[] prices) {
 
         for (double price : prices){
@@ -10,7 +10,7 @@ public class DailyPower {
         }
     }
 
-    // b) print power usage during a day
+    // b) TODO Ferdig uten test TODO
     public static void printPowerUsage(double[] usage) {
 
 
@@ -19,7 +19,7 @@ public class DailyPower {
         }
     }
 
-    // c) compute power usage for a single day
+    // c) TODO Ferdig uten test TODO
     public static double computePowerUsage(double[] usage) {
 
         double sum = 0;
@@ -29,7 +29,7 @@ public class DailyPower {
         return sum;
     }
 
-    // d) compute spot price for a single day
+    // d) TODO Ferdig uten test TODO
     public static double computeSpotPrice(double[] usage, double[] prices) {
 
         double price = 0;
@@ -40,7 +40,7 @@ public class DailyPower {
         return price;
     }
 
-    // e) compute power support for a given usage and price
+    // e) TODO Ferdig uten test TODO
     private static final double THRESHOLD = 0.9375;
     private static final double PERCENTAGE = 0.9;
 
@@ -55,7 +55,7 @@ public class DailyPower {
         return support;
     }
 
-    // f) compute power support for a single day
+    // f) TODO Ferdig uten test TODO
     public static double computePowerSupport(double[] usage, double[] prices) {
 
         double support = 0;
@@ -67,7 +67,7 @@ public class DailyPower {
 
     private static final double NORGESPRIS_KWH = 0.5;
 
-    // g) compute norges pris for a single day
+    // g) TODO Ferdig uten test TODO
     public static double computeNorgesPrice(double[] usage) {
 
         double price = 0;
@@ -77,7 +77,7 @@ public class DailyPower {
         return price;
     }
 
-    // g) compute peak usage during a single day
+    // h) TODO Ferdig uten test TODO
     public static double findPeakUsage(double[] usage) {
 
         double temp_max = 0;
@@ -88,7 +88,7 @@ public class DailyPower {
         }
         return temp_max;
     }
-
+    // i) TODO Ferdig uten test TODO
     public static double findAvgPower(double[] usage) {
 
         double average = 0;
