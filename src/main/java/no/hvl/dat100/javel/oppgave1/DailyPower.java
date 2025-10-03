@@ -8,19 +8,15 @@ public class DailyPower {
         for (double price : prices){
             System.out.printf("%.2f kWh ", price);
         }
-
-        //hej, hej, hallå
-        // TODO
-
     }
 
     // b) print power usage during a day
     public static void printPowerUsage(double[] usage) {
 
-        for (double bruk : usage) {
-            System.out.printf("%.2f kr. ");
-        }
 
+        for (double bruk : usage) {
+            System.out.printf("%.2f kr. ", bruk);
+        }
     }
 
     // c) compute power usage for a single day
