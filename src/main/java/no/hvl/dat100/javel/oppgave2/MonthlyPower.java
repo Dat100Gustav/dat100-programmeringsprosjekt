@@ -9,27 +9,23 @@ public class MonthlyPower {
         System.out.println("Månedlig bruk: ");
         for (int i = 0; i < usage.length; i++) {
             System.out.print("Dag " + (i+1) + ": ");
-            for (int j = 0; j < usage[i].length; j++){
-                double bruk = usage[i][j];
-                System.out.print(bruk + " KWh, ");
-            }
+            DailyPower.printPowerUsage(usage[i]);
             System.out.println();
+            }
         }
 
-    }
+
 
     // b) print power prices for a month
     public static void print_PowerPrices(double[][] prices) {
         System.out.println("Månedlig kostnad (dag for dag): ");
         for (int i = 0; i < prices.length; i++) {
             System.out.print("Dag " + (i + 1) + ": ");
-            for (int j = 0; j < prices[i].length; j++) {
-                double pris = prices[i][j];
-                System.out.print(pris + " NOK, ");
-            }
+            DailyPower.printPowerPrices(prices[i]);
             System.out.println();
+            }
         }
-    }
+
 
     // c) compute total power usage for a month
     public static double computePowerUsage(double[][] usage) {
@@ -38,9 +34,8 @@ public class MonthlyPower {
 
         System.out.println("Total bruk: ");
         for (int i = 0; i < usage.length; i++) {
-            for (int j = 0; j < usage[i].length; j++) {
-                sum += usage[i][j];
-            }
+            DailyPower.computePowerUsage(usage[i]);
+                sum += DailyPower.computePowerUsage(usage[i]);
         }
         return sum;
     }

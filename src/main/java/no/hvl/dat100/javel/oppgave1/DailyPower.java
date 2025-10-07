@@ -6,7 +6,7 @@ public class DailyPower {
     public static void printPowerPrices(double[] prices) {
 
         for (double price : prices){
-            System.out.printf("%.2f kWh ", price);
+            System.out.printf("%.2f kr, ", price);
         }
     }
 
@@ -15,7 +15,7 @@ public class DailyPower {
 
 
         for (double bruk : usage) {
-            System.out.printf("%.2f kr. ", bruk);
+            System.out.printf("%.2f KWh ", bruk);
         }
     }
 
