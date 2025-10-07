@@ -15,7 +15,6 @@ public class MonthlyPower {
         }
 
 
-
     // b) print power prices for a month
     public static void print_PowerPrices(double[][] prices) {
         System.out.println("Månedlig kostnad (dag for dag): ");
