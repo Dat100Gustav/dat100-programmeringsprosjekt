@@ -55,7 +55,7 @@ public class DailyPower {
         return support;
     }
 
-    // f) TODO Ferdig uten test TODO
+    // f) TODO Ferdig uten test
     public static double computePowerSupport(double[] usage, double[] prices) {
 
         double support = 0;

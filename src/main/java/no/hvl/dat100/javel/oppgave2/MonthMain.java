@@ -17,8 +17,12 @@ public class MonthMain {
         System.out.println("==============");
         System.out.println();
 
+
+        //oppgave e)
+        System.out.printf("Med norgespris skal du betale: %.2f NOK", MonthlyPower.computeNorgesPrice(MonthPowerData.powerusage_month));
+
         /*
-        TODO
+
 
          Write code that tests the methods you implement in the MonthlyPower class
          Remember to teste the methods as you implement them
