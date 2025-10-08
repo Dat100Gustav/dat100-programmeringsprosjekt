@@ -20,5 +20,24 @@ public class InvoiceMain {
 
         */
 
+        Customer customer = new Customer("Eivind", "m@gmail.com", 10, PowerAgreementType.POWERSUPPORT);
+        Invoice invoiceE = new Invoice(customer, "Januar", CustomerPowerUsageData.usage_month_customer1, MonthPowerData.powerprices_month);
+
+        Customer gustav = new Customer("Gustav", "callme@gmail.com", 90, PowerAgreementType.SPOTPRICE);
+        Invoice invoiceG = new Invoice(gustav, "Juni", CustomerPowerUsageData.usage_month_customer3, MonthPowerData.powerprices_month);
+
+        Customer thomas = new Customer("Thomas", "thoma@gmail.com", 12, PowerAgreementType.NORGESPRICE);
+        Invoice invoiceT = new Invoice(thomas, "Desember", CustomerPowerUsageData.usage_month_customer2, MonthPowerData.powerprices_month);
+
+
+        Invoice[] invoiceTab = {invoiceE, invoiceG, invoiceT};
+
+        for (Invoice invoice : invoiceTab){
+            invoice.computeAmount();
+        }
+
+
+        Invoices.processInvoices(invoiceTab);
+        // invoice.printInvoice();
     }
 }

@@ -20,12 +20,5 @@ public class CustomersMain {
         */
 
 
-        Customer kunde1 = new Customer("Eivind", "E@gmail.com", 100, PowerAgreementType.NORGESPRICE);
-
-        Customers kunder = new Customers(10);
-
-        kunder.customers[0] = kunde1;
-
-        System.out.println(kunder.getCustomer(100));
     }
 }

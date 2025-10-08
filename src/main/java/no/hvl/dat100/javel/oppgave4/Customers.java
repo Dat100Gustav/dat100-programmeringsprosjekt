@@ -4,7 +4,7 @@ import no.hvl.dat100.javel.oppgave3.Customer;
 
 public class Customers {
 
-    public Customer[] customers;
+    private Customer[] customers;
 
 
     // a) Complete constructor
