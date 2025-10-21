@@ -47,9 +47,18 @@ public class Invoice {
     public void printInvoice() {
 
         // TODO
+<<<<<<< HEAD
         System.out.println(c.toString());
 
         System.out.println("\nMonth: " + month + "\nUsage: " + MonthlyPower.computePowerUsage(usage) + " kWh\nAmount: " + amount + " NOK\n");
+=======
+<<<<<<< Updated upstream
+=======
+        System.out.println(c.toString());
+
+        System.out.println("\nMonth: " + month + "\nUsage: " + MonthlyPower.computePowerUsage(usage) + " kWh\nAmount: " + amount + " NOK");
+>>>>>>> Stashed changes
+>>>>>>> Eivind
 
     }
 }

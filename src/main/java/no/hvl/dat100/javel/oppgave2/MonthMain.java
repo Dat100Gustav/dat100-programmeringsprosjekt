@@ -39,14 +39,5 @@ public class MonthMain {
         //Oppgave g)
         System.out.printf("Din pris ved norgespris: %.2f kr", MonthlyPower.computeNorgesPrice(MonthPowerData.powerusage_month));
 
-
-        /*
-
-
-         Write code that tests the methods you implement in the MonthlyPower class
-         Remember to teste the methods as you implement them
-         Remember to also to check that you get the expected results
-         */
-
     }
 }

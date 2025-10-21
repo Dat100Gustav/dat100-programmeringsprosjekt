@@ -6,17 +6,10 @@ public class CustomerMain {
 
     public static void main(String[] args) {
 
-        System.out.println("==============");
+        System.out.println("============================");
         System.out.println("OPPGAVE 3");
-        System.out.println("==============");
+        System.out.println("============================");
         System.out.println();
-
-        /*
-        TODO
-
-         Write code that creates a Customer object and teste the methods implemented in the class
-
-        */
 
         Customer mats = new Customer("Mads Dittman Mikkelsen","mats@gmail.com",1004, PowerAgreementType.SPOTPRICE);
 

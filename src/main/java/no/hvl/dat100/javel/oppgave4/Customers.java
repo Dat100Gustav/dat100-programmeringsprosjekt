@@ -51,7 +51,7 @@ public class Customers {
         boolean inserted = false;
 
         for (int i = 0; i < customers.length; i++){
-            if (customers[i] == null){
+            if (customers[i] == null && !inserted){
                 customers[i] = c;
                 inserted = true;
             }
@@ -67,10 +67,12 @@ public class Customers {
         Customer c = null;
 
         for (int i = 0; i < customers.length; i++){
-            if (customers[i].getCustomer_id() == customer_id){
-                c = customers[i];
-                customers[i] = null;
-                deleted = true;
+            if (customers[i] != null){
+                if (customers[i].getCustomer_id() == customer_id && !deleted){
+                    c = customers[i];
+                    customers[i] = null;
+                    deleted = true;
+                }
             }
         }
 
