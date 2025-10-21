@@ -13,18 +13,6 @@ public class InvoiceMain {
         System.out.println("==============");
         System.out.println();
 
-<<<<<<< Updated upstream
-        /*
-        TODO
-
-         Write code that uses the methods implemented in the Invoice-classes
-
-        */
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> Eivind
         Customer customer = new Customer("Eivind", "m@gmail.com", 10, PowerAgreementType.POWERSUPPORT);
         Invoice invoiceE = new Invoice(customer, "Januar", CustomerPowerUsageData.usage_month_customer1, MonthPowerData.powerprices_month);
 
@@ -37,17 +25,14 @@ public class InvoiceMain {
 
         Invoice[] invoiceTab = {invoiceE, invoiceG, invoiceT};
 
-        for (Invoice invoice : invoiceTab){
+        for (Invoice invoice : invoiceTab) {
             invoice.computeAmount();
         }
 
-<<<<<<< HEAD
-
         Invoices.processInvoices(invoiceTab);
         // invoice.printInvoice();
-=======
+
         Invoices.processInvoices(invoiceTab);
->>>>>>> Stashed changes
->>>>>>> Eivind
+
     }
 }
