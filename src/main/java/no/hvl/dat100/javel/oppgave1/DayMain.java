@@ -22,23 +22,30 @@ public class DayMain {
 
         // oppgave b)
         DailyPower.printPowerUsage(powerusage_day);
+        System.out.println();
 
         // oppgave c)
         System.out.println(DailyPower.computePowerUsage(powerusage_day));
+        System.out.println();
 
         // oppgave d)
         System.out.println(DailyPower.computeSpotPrice(powerusage_day, powerprices_day));
+        System.out.println();
 
         // oppgave e) og f)
         System.out.println(DailyPower.computePowerSupport(powerusage_day, powerprices_day));
+        System.out.println();
 
         // oppgave g)
         System.out.println(DailyPower.computeNorgesPrice(powerusage_day));
+        System.out.println();
 
         // oppgave h)
         System.out.println(DailyPower.findPeakUsage(powerusage_day));
+        System.out.println();
 
         // oppgave i)
         System.out.println(DailyPower.findAvgPower(powerusage_day));
+        System.out.println();
     }
 }

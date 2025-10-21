@@ -4,11 +4,6 @@ public class Invoices {
 
     public static void processInvoices(Invoice[] invoices) {
 
-
-        for (Invoice invoice : invoices){
-            invoice.printInvoice();
-        }
-
         for (Invoice invoice : invoices){
             System.out.println("============================");
             invoice.printInvoice();

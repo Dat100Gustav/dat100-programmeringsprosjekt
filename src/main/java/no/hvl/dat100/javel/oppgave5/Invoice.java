@@ -50,9 +50,5 @@ public class Invoice {
 
         System.out.println("\nMonth: " + month + "\nUsage: " + MonthlyPower.computePowerUsage(usage) + " kWh\nAmount: " + amount + " NOK\n");
 
-        System.out.println(c.toString());
-
-        System.out.println("\nMonth: " + month + "\nUsage: " + MonthlyPower.computePowerUsage(usage) + " kWh\nAmount: " + amount + " NOK");
-
     }
 }

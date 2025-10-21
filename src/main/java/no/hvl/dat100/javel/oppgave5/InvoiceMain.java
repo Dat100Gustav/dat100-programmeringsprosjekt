@@ -13,6 +13,8 @@ public class InvoiceMain {
         System.out.println("==============");
         System.out.println();
 
+
+        // a), b), c) og d)
         Customer customer = new Customer("Eivind", "m@gmail.com", 10, PowerAgreementType.POWERSUPPORT);
         Invoice invoiceE = new Invoice(customer, "Januar", CustomerPowerUsageData.usage_month_customer1, MonthPowerData.powerprices_month);
 
@@ -30,9 +32,5 @@ public class InvoiceMain {
         }
 
         Invoices.processInvoices(invoiceTab);
-        // invoice.printInvoice();
-
-        Invoices.processInvoices(invoiceTab);
-
     }
 }
