@@ -78,8 +78,8 @@ public class MonthlyPower {
 
         for (int i = 0; i < usage.length; i++) {
             for (int j = 0; j < usage[i].length; j++) {
-                if (prices[i][j] > 0.5) {
-                    support += (prices[i][j] - 0.5) * usage[i][j];
+                if (prices[i][j] > 0.9375) {
+                    support += ((prices[i][j] - 0.9375) * usage[i][j]) * 0.9;
                 }
             }
         }

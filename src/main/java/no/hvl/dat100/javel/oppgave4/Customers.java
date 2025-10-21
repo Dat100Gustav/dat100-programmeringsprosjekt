@@ -9,18 +9,17 @@ public class Customers {
     // a) Complete constructor
     public Customers(int size) {
 
-        // TODO
-
+        customers = new Customer[size];
     }
 
     // b) count number of non-null references
     public int countNonNull() {
-
-
         int count = 0;
-
-        // TODO
-
+        for (int i = 0; i < customers.length; i++){
+            if (customers[i] != null){
+                count++;
+            }
+        }
         return count;
     }
 
@@ -30,8 +29,14 @@ public class Customers {
         boolean funnet = false;
         Customer c = null;
 
-        // TODO
-
+        for (Customer kunde : customers) {
+            if (kunde != null) {
+                if (kunde.getCustomer_id() == customer_id) {
+                    funnet = true;
+                    c = kunde;
+                }
+            }
+        }
         return c;
     }
 
@@ -40,8 +45,12 @@ public class Customers {
 
         boolean inserted = false;
 
-        // TODO
-
+        for (int i = 0; i < customers.length; i++){
+            if (customers[i] == null){
+                customers[i] = c;
+                inserted = true;
+            }
+        }
         return inserted;
     }
 
@@ -51,18 +60,28 @@ public class Customers {
         boolean deleted = false;
         Customer c = null;
 
-        // TODO
-
+        for (int i = 0; i < customers.length; i++){
+            if(customers[i].getCustomer_id() == customer_id){
+                c = customers[i];
+                customers[i] = null;
+                deleted = true;
+            }
+        }
         return c;
     }
 
     // f) return reference table with all customers
     public Customer[] getCustomers() {
-
         Customer[] customers = null;
+        customers = new Customer[countNonNull()];
+        int i = 0;
 
-        // TODO
-
+        for (Customer kunde : this.customers){
+            if (kunde != null){
+                customers[i] = kunde;
+                i++;
+            }
+        }
         return customers;
     }
 }
