@@ -16,13 +16,29 @@ public class DayMain {
         System.out.println("==============");
         System.out.println();
 
-        /*
-        TODO
+        // oppgave a)
+        DailyPower.printPowerPrices(powerprices_day);
+        System.out.println();
 
-         Write code that tests the methods you implement in the DailyPower class
-         Remember to teste the methods as you implement them
-         Remember to also to check that you get the expected results
-         */
+        // oppgave b)
+        DailyPower.printPowerUsage(powerusage_day);
 
+        // oppgave c)
+        System.out.println(DailyPower.computePowerUsage(powerusage_day));
+
+        // oppgave d)
+        System.out.println(DailyPower.computeSpotPrice(powerusage_day, powerprices_day));
+
+        // oppgave e) og f)
+        System.out.println(DailyPower.computePowerSupport(powerusage_day, powerprices_day));
+
+        // oppgave g)
+        System.out.println(DailyPower.computeNorgesPrice(powerusage_day));
+
+        // oppgave h)
+        System.out.println(DailyPower.findPeakUsage(powerusage_day));
+
+        // oppgave i)
+        System.out.println(DailyPower.findAvgPower(powerusage_day));
     }
 }

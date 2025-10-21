@@ -5,8 +5,13 @@ public class DailyPower {
     // a) TODO Ferdig uten test TODO
     public static void printPowerPrices(double[] prices) {
 
-        for (double price : prices){
-            System.out.printf("%.2f kr, ", price);
+        for (int i = 0; i < prices.length; i++) {
+
+            System.out.printf("%.2f kr, ", prices[i]);
+
+            if ((i+1) % 6 == 0){
+                System.out.println();
+            }
         }
     }
 
@@ -14,8 +19,12 @@ public class DailyPower {
     public static void printPowerUsage(double[] usage) {
 
 
-        for (double bruk : usage) {
-            System.out.printf("%.2f KWh ", bruk);
+        for (int i = 0; i < usage.length; i++) {
+            System.out.printf("%.2f KWh ", usage[i]);
+
+            if ((i+1) % 6 == 0){
+                System.out.println();
+            }
         }
     }
 
